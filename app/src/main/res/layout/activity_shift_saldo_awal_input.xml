@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="0dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/LargeTextBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masukan Saldo Awal" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/viewStarted"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="@dimen/global_margin"
+        app:layout_constraintBottom_toTopOf="@+id/viewFooter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <TextView
+            style="@style/MediumTextGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saldo awal akan tercatat sebagai kas masuk." />
+
+        <!-- saldo awal -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutSaldoAwal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/global_margin"
+            android:background="@color/white"
+            android:hint="Tunai"
+            app:boxBackgroundColor="@color/white"
+            app:endIconMode="none">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtSaldoAwal"
+                style="@style/StyleTextEditGeneral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:inputType="number"
+                android:maxLines="1"
+                android:minLines="1"
+                android:text="0" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnStokOpname"
+            android:layout_marginTop="@dimen/global_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stok Opname"
+            android:textAllCaps="false"
+            android:background="@color/apps_color_1"
+            android:foreground="@drawable/ripple_button_corner_10"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/txtStatusSO"
+            style="@style/MediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anda belum melakukan stok opname."
+            android:textColor="@color/red"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/viewFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/global_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/style_button_2"
+            android:foreground="@drawable/ripple_button_corner_10"
+            android:text="Simpan"
+            android:textColor="@color/white" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

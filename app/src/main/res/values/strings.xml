@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Pos Crushty</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="must_be_online">Anda harus online untuk melakukan tindakan ini. Silakan periksa koneksi internet Anda.</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="database_name">poscrushty.db</string>
+    <string name="loading">Loading...</string>
+    <string name="information">Informasi</string>
+    <string name="confirmation">Konfirmasi</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_pengeluaran_lain_input">PengeluaranLainInputActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+</resources>

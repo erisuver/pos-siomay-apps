@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Main menu items -->
+    <group android:id="@+id/main_menu">
+        <item
+            android:id="@+id/sync_data"
+            android:icon="@drawable/ic_sync"
+            android:title="Sync Data" />
+
+        <item
+            android:id="@+id/penjualan"
+            android:icon="@drawable/penjualan"
+            android:title="Penjualan" />
+
+        <item
+            android:id="@+id/terima_barang"
+            android:icon="@drawable/terima_barang"
+            android:title="Terima Barang" />
+
+        <item
+            android:id="@+id/shift_kasir"
+            android:icon="@drawable/shift"
+            android:title="Shift Kasir" />
+
+        <item
+            android:id="@+id/pengeluaran_lain"
+            android:icon="@drawable/pengeluaran_lain"
+            android:title="Pengeluaran Lain" />
+
+        <item
+            android:id="@+id/kirim_barang"
+            android:icon="@drawable/kirim_barang"
+            android:title="Kirim Barang" />
+
+        <item
+            android:id="@+id/stok_opname"
+            android:icon="@drawable/stok_opname"
+            android:title="Stok Opname" />
+
+        <item
+            android:id="@+id/laporan_penjualan"
+            android:icon="@drawable/laporan_penjualan"
+            android:title="Laporan Penjualan" />
+
+        <item
+            android:id="@+id/laporan_penjualan_permenu"
+            android:icon="@drawable/ic_food"
+            android:title="Laporan Item Terjual" />
+
+        <item
+            android:id="@+id/laporan_keuangan"
+            android:icon="@drawable/ic_cash"
+            android:title="Laporan Keuangan" />
+
+
+        <item
+            android:id="@+id/sync_printer"
+            android:icon="@drawable/sync_printer"
+            android:title="Sync Printer" />
+
+        <item
+            android:id="@+id/cash_drawer"
+            android:icon="@drawable/ic_drawer"
+            android:title="Open Cash Drawer" />
+
+        <item
+            android:id="@+id/kirim_db"
+            android:icon="@drawable/ic_upload_cloud"
+            android:title="Kirim Database" />
+
+    </group>
+
+
+    <!-- Separate group for logout to push it at the bottom -->
+    <group
+        android:id="@+id/logout_group"
+        android:menuCategory="secondary">
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+</menu>

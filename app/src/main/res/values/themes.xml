@@ -1,0 +1,215 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme without ActionBar. -->
+    <style name="Theme.Pos_crushty_android" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/apps_color_2</item>
+        <item name="colorPrimaryDark">@color/apps_color_1</item>
+        <item name="colorAccent">@color/apps_color_2</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <!-- Text. -->
+        <item name="titleTextColor">@color/black</item>
+        <item name="searchViewStyle">@style/Widget.AppCompat.Light.SearchView</item>
+        <item name="textAppearanceButton">@style/TextAppearance.App.Button</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/lato</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/apps_color_4</item>
+        <item name="colorSecondaryVariant">@color/apps_color_3</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Customize your theme here. -->
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.App.BottomSheetDialog</item>
+    </style>
+
+    <style name="Theme.Pos_crushty_android.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Pos_crushty_android.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <dimen name="global_margin">16dp</dimen>
+
+
+    <style name="TextAppearance.App.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/lato_thin</item>
+        <item name="android:fontFamily">@font/lato_thin</item>
+    </style>
+
+    <style name="Button" parent="Widget.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="StyleLogin" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="colorControlHighlight">@android:color/white</item>
+        <item name="android:textColorHint">@color/gray</item>
+    </style>
+
+    <!--FONT-->
+    <style name="style_font">
+        <item name="android:fontFamily">@font/lato</item>
+    </style>
+
+    <style name="VerySmallText" parent="style_font">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="SmallText" parent="style_font">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MediumText" parent="style_font">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MediumTextGray" parent="style_font">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="MediumTextGrayTitle" parent="style_font">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:layout_marginStart">3dp</item>
+    </style>
+
+    <style name="MediumTextBlue" parent="style_font">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/blue_font</item>
+    </style>
+
+    <style name="LargeText" parent="style_font">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="SmallTextBold" parent="style_font">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MediumTextBold" parent="style_font">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="LargeTextBold" parent="style_font">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="HeaderText" parent="style_font">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="FilterText" parent="style_font">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/apps_color_2</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="StyleTextEditGeneral" parent="MediumText">
+        <item name="android:layout_marginTop">-8dp</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:paddingTop">35dp</item>
+    </style>
+
+
+    <style name="styleSpinner" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="CustomNavigationViewTheme" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">16sp</item>
+        <!-- Add more customizations as needed -->
+    </style>
+
+    <style name="AppTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/apps_color_1</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
+    </style>
+
+    <!-- for text -->
+    <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:fontFamily">@font/lato</item>
+    </style>
+    <style name="Theme.Pos_crushty_android.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--atur style bottom sheet-->
+    <style name="ThemeOverlay.App.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/ModalBottomSheetDialog</item>
+    </style>
+
+    <style name="ModalBottomSheetDialog" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="backgroundTint">@color/white</item> <!-- Ganti dengan warna pilihan Anda -->
+        <item name="shapeAppearance">@style/ShapeAppearance.App.LargeComponent</item>
+    </style>
+
+    <style name="ShapeAppearance.App.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item> <!-- Bisa diganti dengan "cut" untuk sudut potong -->
+        <item name="cornerSize">24dp</item> <!-- Sesuaikan ukuran sudut melengkung -->
+    </style>
+
+    <style name="KeyButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="KeyButton2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:backgroundTint">@color/gray_raven</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="KeyButton3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:backgroundTint">@color/apps_color_1</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="StyleMargin1">
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+    </style>
+</resources>

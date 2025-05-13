@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:agendaCalendar="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg01"
+    android:orientation="vertical"
+    tools:context=".ui.laporan_keuangan.LaporanKeuanganActivity">
+
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="0dp"
+        android:textColor="@color/black">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/LargeTextBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Laporan Keuangan" />
+
+        <ImageView
+            android:id="@+id/imgDatePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/global_margin"
+            android:src="@drawable/ic_date" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.github.tibolte.agendacalendarview.AgendaCalendarView
+            android:id="@+id/agenda_calendar_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            agendaCalendar:agendaCurrentDayTextColor="@color/generic_4"
+            agendaCalendar:calendarColor="@color/white"
+            agendaCalendar:calendarCurrentDayTextColor="@color/calendar_text_current_day"
+            agendaCalendar:calendarDayTextColor="@color/generic_5"
+            agendaCalendar:calendarHeaderColor="@color/generic_4"
+            agendaCalendar:calendarPastDayTextColor="@android:color/darker_gray"
+            agendaCalendar:fabColor="@color/theme_accent" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>

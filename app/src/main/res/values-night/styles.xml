@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/apps_color_2</item>
+        <item name="colorPrimaryDark">@color/apps_color_1</item>
+        <item name="colorAccent">@color/apps_color_2</item>
+        <item name="android:textColorPrimary">@color/black</item>
+
+        <item name="titleTextColor">@color/black</item>
+        <item name="searchViewStyle">@style/Widget.AppCompat.Light.SearchView</item>
+        <item name="textAppearanceButton">@style/TextAppearance.App.Button</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+        <item name="actionBarStyle">@style/Custom.ActionBar</item>
+    </style>
+
+    <style name="Custom.ActionBar" parent="Widget.MaterialComponents.Light.ActionBar.Solid">
+        <item name="background">@color/white</item>
+    </style>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@color/red</item>
+        <item name="titleTextStyle">@style/MyActionBarTitle</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyActionBarTitle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/black_smooth</item>
+    </style>
+
+    <style name="StyleToolbar" parent="Widget.AppCompat.ActionBar">
+        <item name="background">@color/white</item>
+        <item name="titleTextColor">@color/black</item>
+        <!-- ... item lainnya ... -->
+    </style>
+</resources>

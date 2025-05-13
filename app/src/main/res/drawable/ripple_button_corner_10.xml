@@ -1,0 +1,11 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="?attr/colorControlHighlight">
+
+    <!-- Shape drawable untuk ripple effect mengikuti corner radius -->
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp" /> <!-- Sesuaikan radius dengan style_button_1 -->
+            <solid android:color="@android:color/white" />
+        </shape>
+    </item>
+</ripple>

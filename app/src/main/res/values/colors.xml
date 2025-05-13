@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="apps_color_1">#EC8000</color>
+    <color name="apps_color_2">#DD8F31</color>
+    <color name="apps_color_3">#CCA06A</color>
+    <color name="apps_color_4">#CCA06A</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#03A9F4</color>
+    <color name="gray">#6E6F70</color>
+    <color name="gray300">#E0E0E0</color>
+    <color name="background_color">#F1F2F6</color>
+    <color name="white_aura_blue">#D9ECFB</color>
+    <color name="white_aura_red">#FABCD1</color>
+    <color name="white_aura_green">#C9FDF8</color>
+    <color name="white_aura_yellow">#FBEED9</color>
+    <color name="white_aura_green2">#D7ECF6</color>
+    <color name="black_smooth">#252525</color>
+    <color name="color_selected_item">#902196F3</color>
+    <color name="color_item">#FFFFFFFF</color>
+    <color name="green">#4DD153</color>
+    <color name="red">#ff0000</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="transparent">#80000000</color>
+    <color name="colorPrimaryDark">#0E2954</color>
+    <color name="colorPrimary">#1F6E8C</color>
+    <color name="silver">#f0ecf4</color>
+    <color name="blue_font">#2e8a99</color>
+    <color name="red_flag">#e4b4b4</color>
+    <color name="green_tea">#addcaa</color>
+    <color name="lime">#dce174</color>
+    <color name="shimmer">#16000000</color>
+    <color name="gray_raven">#D9D9D9</color>
+    <color name="generic_1">#c44d83</color>
+    <color name="generic_2">#835592</color>
+    <color name="generic_3">#46547f</color>
+    <color name="generic_4">#ed5656</color>
+    <color name="generic_5">#2f4858</color>
+    <color name="apps_color_5">#B8B8B8</color>
+    <color name="apps_color_6">#FFF6E5</color>
+
+
+</resources>

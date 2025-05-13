@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ui.pembayaran.PembayaranTunaiActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="0dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/LargeTextBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Metode Bayar Tunai" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/customKeyboard"
+        android:layout_below="@id/toolbar"
+        android:padding="@dimen/global_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Total Tagihan Label -->
+            <TextView
+                android:id="@+id/tvTotalTagihanLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Total Tagihan"
+                android:textSize="14sp" />
+
+            <!-- Total Tagihan Value -->
+            <TextView
+                android:id="@+id/tvTotal"
+                style="@style/HeaderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Rp. 69.000" />
+
+            <!-- Uang Pas Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnUangPas"
+                style="@style/MediumText"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="@dimen/global_margin"
+                android:gravity="center"
+                android:text="UANG PAS"
+                android:textAllCaps="true"
+                app:backgroundTint="@color/white"
+                app:icon="@drawable/ic_cash"
+                app:iconGravity="textStart"
+                app:iconPadding="10dp"
+                app:iconTint="@color/black"
+                app:strokeColor="@color/gray_raven"
+                app:strokeWidth="1dp" />
+
+            <!-- Uang Diterima -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutUangDiterima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_margin"
+                android:background="@color/white"
+                android:hint="Uang Diterima"
+                app:boxBackgroundColor="@color/white"
+                app:endIconMode="none">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtUangDiterima"
+                    style="@style/StyleTextEditGeneral"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="start|top"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:text="0" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Kembalian -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutUangKembalian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_margin"
+                android:background="@color/white"
+                android:hint="Uang Kembalian"
+                app:boxBackgroundColor="@color/white"
+                app:endIconMode="none">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtUangKembalian"
+                    style="@style/StyleTextEditGeneral"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|top"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:text="0" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Lanjut Button -->
+            <Button
+                android:id="@+id/btnLanjut"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/global_margin"
+                android:background="@drawable/style_button_2"
+                android:foreground="@drawable/ripple_button_corner_10"
+                android:text="Bayar" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <include
+        android:id="@+id/customKeyboard"
+        layout="@layout/custom_keyboard"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
